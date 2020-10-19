@@ -7,14 +7,14 @@ using UnityEngine.UI;
 public class ItemPickup : MonoBehaviour
 {
     [SerializeField]
-    private Text pickUpText;
+    //private Text pickUpText;
     // Allows player to pick up item when "True"
     private bool pickUpAllowed;
 
     //  when walking towards an item
     private void Start()
     {
-        pickUpText.gameObject.SetActive(false);
+        //pickUpText.gameObject.SetActive(false);
     }
 
     private void Update()
@@ -28,7 +28,7 @@ public class ItemPickup : MonoBehaviour
     {
         if (collision.gameObject.name.Equals("Player"))
         {
-            pickUpText.gameObject.SetActive(true);
+            //pickUpText.gameObject.SetActive(true);
             pickUpAllowed = true;
         }
     }
@@ -37,7 +37,7 @@ public class ItemPickup : MonoBehaviour
     {
         if (collision.gameObject.name.Equals("Player"))
         {
-            pickUpText.gameObject.SetActive(false);
+            //pickUpText.gameObject.SetActive(false);
             pickUpAllowed = false;
         }
     }
