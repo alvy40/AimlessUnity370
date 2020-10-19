@@ -8,6 +8,7 @@ TagManager:
   - LargeTile
   - LevelChanger
   - Box
+  - pushable
   layers:
   - Default
   - TransparentFX
