@@ -16,6 +16,7 @@ public class PushObjects : MonoBehaviour
 		Physics2D.queriesStartInColliders = false;
 		RaycastHit2D hit = Physics2D.Raycast(transform.position, Vector2.right * transform.localScale.x, distance, boxMask);
 
+
 		if (hit.collider != null && hit.collider.gameObject.tag == "pushable" && Input.GetKeyDown(KeyCode.Q))
 		{
 
